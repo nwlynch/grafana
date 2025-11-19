@@ -1083,6 +1083,10 @@ export interface FeatureToggles {
   */
   alertingTriage?: boolean;
   /**
+  * Use synchronized dispatch timer to minimize duplicate notifications across alertmanager HA pods
+  */
+  alertingSyncDispatchTimer?: boolean;
+  /**
   * Enables the Graphite data source full backend mode
   * @default false
   */

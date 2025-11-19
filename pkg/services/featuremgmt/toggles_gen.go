@@ -982,6 +982,10 @@ const (
 	// Enables the alerting triage feature
 	FlagAlertingTriage = "alertingTriage"
 
+	// FlagAlertingSyncDispatchTimer
+	// Use synchronized dispatch timer to minimize duplicate notifications across alertmanager HA pods
+	FlagAlertingSyncDispatchTimer = "alertingSyncDispatchTimer"
+
 	// FlagGraphiteBackendMode
 	// Enables the Graphite data source full backend mode
 	FlagGraphiteBackendMode = "graphiteBackendMode"
