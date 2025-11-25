@@ -31,7 +31,7 @@
     "e2e:playwright:storybook": "yarn playwright test -c playwright.storybook.config.ts",
     "e2e:acceptance": "yarn playwright test --grep @acceptance",
     "e2e:storybook": "PORT=9001 ./e2e/run-suite storybook true",
-    "e2e:plugin:build": "nx run-many -t build --projects='@test-plugins/*'",
+    "e2e:plugin:build": "ls -la ./node_modules/@grafana && ls -la ./node_modules/@grafana/i18n && nx run-many -t build --projects='@test-plugins/*' --verbose",
     "e2e:plugin:build:dev": "nx run-many -t dev --projects='@test-plugins/*' --maxParallel=100",
     "test": "jest --notify --watch",
     "test:coverage": "jest --coverage",
