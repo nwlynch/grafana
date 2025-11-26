@@ -1963,6 +1963,13 @@ var (
 			RequiresRestart: false,
 			HideFromDocs:    false,
 		},
+		{
+			Name:            "kubernetesAlertingHistorian",
+			Description:     "Adds support for Kubernetes alerting historian APIs",
+			Stage:           FeatureStageExperimental,
+			Owner:           grafanaAlertingSquad,
+			RequiresRestart: true,
+		},
 	}
 )
 
